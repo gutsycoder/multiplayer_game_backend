@@ -2,6 +2,7 @@ const mongoose = require('mongoose');
 const gameLogSchema = new mongoose.Schema({
     mode: {
         type: String,
+        enum:['BATTLE ROYAL','TEAM DEATHMATCH','RUMBLE IN THE BOX'],
         required : true
     },
    start_time:{
@@ -20,6 +21,7 @@ const gameLogSchema = new mongoose.Schema({
     type: String,
     required : true
    },
+   //user_ids: [String]
 },{timestamps:true});
 
 module.exports = mongoose.model('game_logs',gameLogSchema);

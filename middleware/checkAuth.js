@@ -4,7 +4,7 @@ const logger = require('../logger/logger')
 
 const authMiddleware = (req,res,next)=>{
     try{
-        const headerAuth = req.headers['Authorization'];
+        const headerAuth = req.headers['authorization'];
         const parts = headerAuth.split(' ');
         // Check if the token is present and in the correct format
         if (parts.length !== 2 || parts[0] !== 'Bearer') {
@@ -22,9 +22,12 @@ const authMiddleware = (req,res,next)=>{
         if(!decoded){
             return res.status(401).json({message:"Unauthorized",data:[]});
         }
-        req.userData.user_id=decoded.user_id;
-        req.userData.email=decoded.email;
-        req.userData.name=decoded.name;
+        console.log(decoded);
+        const userData={}
+        userData.user_id=decoded.user_id;
+        userData.email=decoded.email;
+        userData.name=decoded.name;
+        req.userData=userData;
         next();
 
  }catch(error){

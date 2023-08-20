@@ -58,7 +58,7 @@ class PlayerController{
                 user_id: player.user_id,
                 email: player.email,
                 name: player.name
-            },process.env.JWT_SECRET,{expiresIn: '1h'});
+            },process.env.JWT_SECRET,{expiresIn: '48h'});
 
             return res.status(200).json({message:"Login Successfull",data:token});
 
