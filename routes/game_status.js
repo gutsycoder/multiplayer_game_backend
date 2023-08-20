@@ -9,4 +9,6 @@ router.post('/area/code',gameController.insertAreaCode);
 router.post('/start',gameController.startGame);
 router.put('/end',gameController.endGame);
 
+router.get('/most/played',gameController.mostPlayedGameCurrent);
+
 module.exports = router;

@@ -156,3 +156,112 @@ ReferenceError: gameData is not defined
     at next (/home/suyash/game_info/multiplayer_game_backend/node_modules/express/lib/router/index.js:280:10)
     at authMiddleware (/home/suyash/game_info/multiplayer_game_backend/middleware/checkAuth.js:31:9)
     at Layer.handle [as handle_request] (/home/suyash/game_info/multiplayer_game_backend/node_modules/express/lib/router/layer.js:95:5)
+2023-08-21 02:00:33 [error] - jwt expired
+TokenExpiredError: jwt expired
+    at /home/suyash/game_info/multiplayer_game_backend/node_modules/jsonwebtoken/verify.js:190:21
+    at getSecret (/home/suyash/game_info/multiplayer_game_backend/node_modules/jsonwebtoken/verify.js:97:14)
+    at module.exports [as verify] (/home/suyash/game_info/multiplayer_game_backend/node_modules/jsonwebtoken/verify.js:101:10)
+    at authMiddleware (/home/suyash/game_info/multiplayer_game_backend/middleware/checkAuth.js:20:25)
+    at Layer.handle [as handle_request] (/home/suyash/game_info/multiplayer_game_backend/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/suyash/game_info/multiplayer_game_backend/node_modules/express/lib/router/index.js:328:13)
+    at /home/suyash/game_info/multiplayer_game_backend/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/suyash/game_info/multiplayer_game_backend/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/suyash/game_info/multiplayer_game_backend/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/home/suyash/game_info/multiplayer_game_backend/node_modules/express/lib/router/index.js:175:3)
+2023-08-21 03:11:20 [error] - Cannot convert object to primitive value
+TypeError: Cannot convert object to primitive value
+    at JSON.parse (<anonymous>)
+    at gameService.mostPlayedGameCurrent (/home/suyash/game_info/multiplayer_game_backend/services/gameService.js:71:29)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async mostPlayedGameCurrent (/home/suyash/game_info/multiplayer_game_backend/controllers/gameController.js:91:33)
+2023-08-21 03:11:20 [error] - Cannot convert object to primitive value
+
+2023-08-21 03:14:16 [error] - Cannot convert object to primitive value
+TypeError: Cannot convert object to primitive value
+    at JSON.parse (<anonymous>)
+    at gameService.mostPlayedGameCurrent (/home/suyash/game_info/multiplayer_game_backend/services/gameService.js:68:29)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async mostPlayedGameCurrent (/home/suyash/game_info/multiplayer_game_backend/controllers/gameController.js:91:33)
+2023-08-21 03:14:16 [error] - Cannot convert object to primitive value
+
+2023-08-21 03:17:08 [error] - Cannot convert object to primitive value
+TypeError: Cannot convert object to primitive value
+    at JSON.parse (<anonymous>)
+    at gameService.mostPlayedGameCurrent (/home/suyash/game_info/multiplayer_game_backend/services/gameService.js:70:29)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async mostPlayedGameCurrent (/home/suyash/game_info/multiplayer_game_backend/controllers/gameController.js:91:33)
+2023-08-21 03:17:08 [error] - Cannot convert object to primitive value
+
+2023-08-21 03:22:36 [error] - topmodes is not defined
+ReferenceError: topmodes is not defined
+    at gameService.mostPlayedGameCurrent (/home/suyash/game_info/multiplayer_game_backend/services/gameService.js:90:64)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async mostPlayedGameCurrent (/home/suyash/game_info/multiplayer_game_backend/controllers/gameController.js:91:33)
+2023-08-21 03:22:36 [error] - topmodes is not defined
+
+2023-08-21 03:24:08 [error] - Invalid argument type
+TypeError: Invalid argument type
+    at encodeCommand (/home/suyash/game_info/multiplayer_game_backend/node_modules/@redis/client/dist/lib/client/RESP2/encoder.js:17:19)
+    at RedisCommandsQueue.getCommandToSend (/home/suyash/game_info/multiplayer_game_backend/node_modules/@redis/client/dist/lib/client/commands-queue.js:138:45)
+    at Commander._RedisClient_tick (/home/suyash/game_info/multiplayer_game_backend/node_modules/@redis/client/dist/lib/client/index.js:515:76)
+    at Commander._RedisClient_sendCommand (/home/suyash/game_info/multiplayer_game_backend/node_modules/@redis/client/dist/lib/client/index.js:502:82)
+    at Commander.commandsExecutor (/home/suyash/game_info/multiplayer_game_backend/node_modules/@redis/client/dist/lib/client/index.js:188:154)
+    at BaseClass.<computed> [as hSet] (/home/suyash/game_info/multiplayer_game_backend/node_modules/@redis/client/dist/lib/commander.js:8:29)
+    at gameService.mostPlayedGameCurrent (/home/suyash/game_info/multiplayer_game_backend/services/gameService.js:90:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async mostPlayedGameCurrent (/home/suyash/game_info/multiplayer_game_backend/controllers/gameController.js:91:33)
+2023-08-21 03:24:08 [error] - Invalid argument type
+
+2023-08-21 03:24:39 [error] - Invalid argument type
+TypeError: Invalid argument type
+    at encodeCommand (/home/suyash/game_info/multiplayer_game_backend/node_modules/@redis/client/dist/lib/client/RESP2/encoder.js:17:19)
+    at RedisCommandsQueue.getCommandToSend (/home/suyash/game_info/multiplayer_game_backend/node_modules/@redis/client/dist/lib/client/commands-queue.js:138:45)
+    at Commander._RedisClient_tick (/home/suyash/game_info/multiplayer_game_backend/node_modules/@redis/client/dist/lib/client/index.js:515:76)
+    at Commander._RedisClient_sendCommand (/home/suyash/game_info/multiplayer_game_backend/node_modules/@redis/client/dist/lib/client/index.js:502:82)
+    at Commander.commandsExecutor (/home/suyash/game_info/multiplayer_game_backend/node_modules/@redis/client/dist/lib/client/index.js:188:154)
+    at BaseClass.<computed> [as hSet] (/home/suyash/game_info/multiplayer_game_backend/node_modules/@redis/client/dist/lib/commander.js:8:29)
+    at gameService.mostPlayedGameCurrent (/home/suyash/game_info/multiplayer_game_backend/services/gameService.js:91:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async mostPlayedGameCurrent (/home/suyash/game_info/multiplayer_game_backend/controllers/gameController.js:91:33)
+2023-08-21 03:24:39 [error] - Invalid argument type
+
+2023-08-21 03:25:13 [error] - Invalid argument type
+TypeError: Invalid argument type
+    at encodeCommand (/home/suyash/game_info/multiplayer_game_backend/node_modules/@redis/client/dist/lib/client/RESP2/encoder.js:17:19)
+    at RedisCommandsQueue.getCommandToSend (/home/suyash/game_info/multiplayer_game_backend/node_modules/@redis/client/dist/lib/client/commands-queue.js:138:45)
+    at Commander._RedisClient_tick (/home/suyash/game_info/multiplayer_game_backend/node_modules/@redis/client/dist/lib/client/index.js:515:76)
+    at Commander._RedisClient_sendCommand (/home/suyash/game_info/multiplayer_game_backend/node_modules/@redis/client/dist/lib/client/index.js:502:82)
+    at Commander.commandsExecutor (/home/suyash/game_info/multiplayer_game_backend/node_modules/@redis/client/dist/lib/client/index.js:188:154)
+    at BaseClass.<computed> [as hSet] (/home/suyash/game_info/multiplayer_game_backend/node_modules/@redis/client/dist/lib/commander.js:8:29)
+    at gameService.mostPlayedGameCurrent (/home/suyash/game_info/multiplayer_game_backend/services/gameService.js:91:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async mostPlayedGameCurrent (/home/suyash/game_info/multiplayer_game_backend/controllers/gameController.js:91:33)
+2023-08-21 03:25:13 [error] - Invalid argument type
+
+2023-08-21 03:26:54 [error] - Invalid argument type
+TypeError: Invalid argument type
+    at encodeCommand (/home/suyash/game_info/multiplayer_game_backend/node_modules/@redis/client/dist/lib/client/RESP2/encoder.js:17:19)
+    at RedisCommandsQueue.getCommandToSend (/home/suyash/game_info/multiplayer_game_backend/node_modules/@redis/client/dist/lib/client/commands-queue.js:138:45)
+    at Commander._RedisClient_tick (/home/suyash/game_info/multiplayer_game_backend/node_modules/@redis/client/dist/lib/client/index.js:515:76)
+    at Commander._RedisClient_sendCommand (/home/suyash/game_info/multiplayer_game_backend/node_modules/@redis/client/dist/lib/client/index.js:502:82)
+    at Commander.commandsExecutor (/home/suyash/game_info/multiplayer_game_backend/node_modules/@redis/client/dist/lib/client/index.js:188:154)
+    at BaseClass.<computed> [as hSet] (/home/suyash/game_info/multiplayer_game_backend/node_modules/@redis/client/dist/lib/commander.js:8:29)
+    at gameService.mostPlayedGameCurrent (/home/suyash/game_info/multiplayer_game_backend/services/gameService.js:91:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async mostPlayedGameCurrent (/home/suyash/game_info/multiplayer_game_backend/controllers/gameController.js:91:33)
+2023-08-21 03:26:54 [error] - Invalid argument type
+
+2023-08-21 03:29:54 [error] - cachedGames is not defined
+ReferenceError: cachedGames is not defined
+    at gameService.mostPlayedGameCurrent (/home/suyash/game_info/multiplayer_game_backend/services/gameService.js:66:25)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async mostPlayedGameCurrent (/home/suyash/game_info/multiplayer_game_backend/controllers/gameController.js:91:33)
+2023-08-21 03:29:54 [error] - cachedGames is not defined
+
+2023-08-21 03:44:44 [error] - gameLogs.aggregate(...).toArray is not a function
+TypeError: gameLogs.aggregate(...).toArray is not a function
+    at gameService.mostPlayedGameCurrent (/home/suyash/game_info/multiplayer_game_backend/services/gameService.js:113:20)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async mostPlayedGameCurrent (/home/suyash/game_info/multiplayer_game_backend/controllers/gameController.js:91:33)
+2023-08-21 03:44:44 [error] - gameLogs.aggregate(...).toArray is not a function
+

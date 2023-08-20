@@ -77,6 +77,30 @@ class GameController {
     }
  }
 
+ async mostPlayedGameCurrent(req,res){
+    try{
+        const {area_code}=req.body;
+        if(!area_code){
+            return res.status(400).json({message:"Area Code Is Mandatory",data:[]});
+        }
+        const isValidAreaCode = await areaCode.find({area_code});
+        if(!isValidAreaCode){
+            return res.status(400).json({message:"Area Code Not Valid",data:[]});
+        }
+
+        const mostPlayedGames = await gameServices.mostPlayedGameCurrent(area_code);
+        
+        return res.status(200).json({message:"Success",data:mostPlayedGames});
+
+
+    }catch(error){
+        logger.error(error);
+        console.error(error);
+        return res.status(500).json({message:"Something Went Wrong",data:[]});
+
+    }
+ }
+
 }
 
 module.exports = new GameController();
