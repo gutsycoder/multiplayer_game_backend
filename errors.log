@@ -1,2 +1,18 @@
 {"_message":"players validation failed","errors":{"user_id":{"kind":"string","message":"Cast to string failed for value \"Promise { 'iwxazo' }\" (type Promise) at path \"user_id\"","name":"CastError","path":"user_id","reason":null,"stringValue":"\"Promise { 'iwxazo' }\"","value":{},"valueType":"Promise"}},"level":"error","message":"players validation failed: user_id: Cast to string failed for value \"Promise { 'iwxazo' }\" (type Promise) at path \"user_id\"","name":"ValidationError"}
 {"level":"error","message":"players validation failed: user_id: Cast to string failed for value \"Promise { 'iwxazo' }\" (type Promise) at path \"user_id\"","status":500}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+2023-08-20 18:35:21 [error] - Cannot read properties of undefined (reading 'split')
+TypeError: Cannot read properties of undefined (reading 'split')
+    at authMiddleware (/home/suyash/game_info/multiplayer_game_backend/middleware/checkAuth.js:8:34)
+    at Layer.handle [as handle_request] (/home/suyash/game_info/multiplayer_game_backend/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/suyash/game_info/multiplayer_game_backend/node_modules/express/lib/router/index.js:328:13)
+    at /home/suyash/game_info/multiplayer_game_backend/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/suyash/game_info/multiplayer_game_backend/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/suyash/game_info/multiplayer_game_backend/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/home/suyash/game_info/multiplayer_game_backend/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/suyash/game_info/multiplayer_game_backend/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/home/suyash/game_info/multiplayer_game_backend/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/suyash/game_info/multiplayer_game_backend/node_modules/express/lib/router/index.js:328:13)
